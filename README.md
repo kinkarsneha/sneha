@@ -1,2 +1,0 @@
-# sneha
-Simple application
