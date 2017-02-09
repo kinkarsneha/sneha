@@ -6,6 +6,8 @@
     "url": "git+https://github.com/start-angular/sb-admin-angular.git"
   },
   "dependencies": {
+    "angular": "^1.4.0",
+    "angular-cookies": "^1.4.0",
     "body-parser": "^1.16.0",
     "express": "^4.14.1",
     "morgan": "^1.8.0",

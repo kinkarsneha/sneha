@@ -16,6 +16,8 @@ angular.module('Authentication')
  
         $scope.login = function () {
             $scope.dataLoading = true;
+
+            console.log($scope.dataLoading);
             AuthenticationService.Login($scope.username, $scope.password, function(response) {
                 if(response.success) {
                     AuthenticationService.SetCredentials($scope.username, $scope.password);
@@ -26,5 +28,15 @@ angular.module('Authentication')
                 }
             });
         };
-    }]);
+    }])
+.factory('LanguagesService', function(){
+  var lng = {}, 
+    _languages = ['en', 'es', 'fr'];
 
+  lng.get = function() {
+    return _languages;
+  }
+
+  return lng;
+});
+  

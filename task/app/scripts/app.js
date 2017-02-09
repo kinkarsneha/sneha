@@ -7,7 +7,8 @@
  *
  * Main module of the application.
  */
-angular.module('Authentication', []);
+angular.module('Authentication', ['Authentication','ngRoute',
+    'ngCookies',]);
 
 angular
   .module('sbAdminApp', [
@@ -89,7 +90,8 @@ angular
             return $ocLazyLoad.load({
               name:'Authentication',
               files:[
-              'scripts/controllers/login.js'
+              'scripts/controllers/login.js',
+              'scripts/testing/login.js',
               ]
             })
           }
@@ -105,6 +107,7 @@ angular
               name:'sbAdminApp',
               files:[
               'scripts/controllers/table.js',
+              'scripts/testing/table.js',
               ]
             })
           }

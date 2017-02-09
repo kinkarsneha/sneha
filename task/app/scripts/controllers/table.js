@@ -22,20 +22,5 @@ angular.module('sbAdminApp')
 					
 });
 
-     /* Test Code */
-    describe('sbAdminApp', function () {
-    
-      beforeEach(module('sbAdminApp'));
-      var $controller;
-      beforeEach(inject(function(_$controller_){
-        $controller = _$controller_;
-      }));
-      describe('object list', function () {
-        it('data list is object', function () {
-          var $scope = {};
-          var controller = $controller('tableCtrl', { $scope: $scope });
 
-          expect($scope.dataList).toBe($scope.dataList);
-        }); 
-      });
-    });
+   
